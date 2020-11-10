@@ -1,38 +1,186 @@
-.App {
-  text-align: center;
+:root {
+	--primary-color: #c51313;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+	min-height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a {
+	text-decoration: none !important;
 }
 
-.App-link {
-  color: #61dafb;
+.text-inherit {
+	color: inherit;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* bootstrap */
+
+.text-primary {
+	color: var(--primary-color) !important;
+}
+
+.btn-primary {
+	background-color: var(--primary-color);
+	border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:visited,
+.btn-primary:focus,
+.btn-primary:active {
+	background-color: var(--primary-color) !important;
+	outline: none !important;
+	box-shadow: 0 0 0 0.2rem var(--primary-color) !important;
+}
+
+.card-img-top {
+	height: 150px !important;
+}
+
+/* bootstrap end */
+
+.welcome {
+	padding: 10px 15px;
+	border-radius: 15px;
+	background-color: #ffffffbd;
+	text-align: center;
+}
+
+.landing-page {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: url('https://www.intostudy.com/images/ImagesUni/Nankai%20University/Campus%20buildings/nankai-campus-building-statue_hero.jpg?w=1255&q=80')
+		center/cover;
+}
+
+.footer {
+	position: sticky;
+	top: 100%;
+}
+
+.footer-link__wraper {
+	background-color: #ffffff67;
+	padding: 10px 15px;
+	margin: 5px auto;
+}
+
+.hover-text-primary:hover {
+	color: var(--primary-color) !important;
+}
+
+.register-page__wraper {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	/* margin-top: 100px; */
+}
+
+.register-page__wraper img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.login-page__wraper {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact-page {
+	min-height: 100vh;
+}
+
+.contact-page__header {
+	width: 100%;
+	height: 300px;
+	background: url('https://signsoft.co.uk/wp-content/uploads/2020/08/shutterstock_1119128888.jpg')
+		center/cover;
+}
+
+.contact-page__container {
+	margin-top: -50px;
+}
+
+.contact-page__header-wraper {
+	padding: 10px 15px;
+	text-align: center;
+	background: #ffffffa4;
+}
+
+.about-page__header {
+	height: 500px;
+	background-color: #aaa;
+	margin-bottom: 1.5rem;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.about-page__container {
+	margin-top: -100px;
+}
+
+.about-page__header-wraper {
+	padding: 10px 15px;
+	text-align: center;
+	background: #ffffffa4;
+}
+
+.about-page__header h1 {
+	font-size: 5rem;
+}
+
+.teachers-page__header {
+	height: 500px;
+	background: url('https://d2v9ipibika81v.cloudfront.net/uploads/sites/78/2016/08/081216en_01-1140x684.jpg') top/cover no-repeat;
+	margin-bottom: 1.5rem;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.teachers-page__container {
+	margin-top: -100px;
+}
+
+.teachers-page__header-wraper {
+	padding: 10px 15px;
+	text-align: center;
+	background: #ffffffa4;
+}
+
+.teachers-page__header h1 {
+	font-size: 5rem;
+}
+
+@media (max-width: 690px) {
+	.navbar * {
+		font-size: 0.75rem !important;
+	}
+
+	.subjects-section {
+		display: none;
+	}
+}
+
+@media (max-width: 540px) {
+	.navbar * {
+		font-size: 0.5rem !important;
+	}
 }
